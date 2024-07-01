@@ -1,9 +1,13 @@
 services:
   app:
-    build:
-      context: ./
-      dockerfile: DockerFile
-    ports:
-      - "3000:3000"
+    image: ruby:lts
     volumes:
-      - .:/usr/src/app
+      - myapp:/home/node/app
+    build: .
+    develop:
+      watch:
+        - action: sync
+          path: ./koans
+          target: /src/app/koans
+volumes:
+  myapp:

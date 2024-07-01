@@ -18,7 +18,7 @@ end
 require 'about_constants'
 require 'about_regular_expressions'
 require 'about_control_statements'
-require 'about_triangle_project'
+# require 'about_triangle_project'
 require 'about_exceptions'
 require 'about_triangle_project_2'
 require 'about_iteration'
